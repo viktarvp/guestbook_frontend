@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import CommentsList from './components/CommentsList';
+import InputForm from './components/InputForm';
+import { Container, Row, Col } from 'react-bootstrap';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="GuestBook">
+      <Container>
+        <Row>
+          <Col></Col>
+          <Col xs={6}>
+            <h1 class="text-center">Guest book</h1>
+            <InputForm />
+            {/* <CommentsList /> */}
+          </Col>
+          <Col></Col>
+        </Row>
+      </Container>
     </div>
   );
 }
